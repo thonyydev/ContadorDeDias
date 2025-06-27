@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contador de Dias</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
+    <meta name="theme-color" content="#00796b" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📅 Contador de Dias</h1>
+      <form id="form">
+        <input
+          type="text"
+          id="titulo"
+          placeholder="Título do evento (Ex: Sem açúcar)"
+          required
+        />
+        <input type="date" id="data" required />
+        <select id="emoji">
+          <option value="🔥">🔥 Foco</option>
+          <option value="💪">💪 Força</option>
+          <option value="💔">💔 Término</option>
+          <option value="🚭">🚭 Sem vício</option>
+          <option value="✨">✨ Outro</option>
+        </select>
+        <button type="submit">➕ Criar contador</button>
+      </form>
+      <div id="contadores"></div>
+    </div>
+    <footer>Feito por Anthony © 2025</footer>
+    <script src="script.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("service-worker.js")
+          .then(() => console.log("Service Worker registrado com sucesso"))
+          .catch((err) =>
+            console.error("Erro ao registrar Service Worker:", err)
+          );
+      }
+    </script>
+  </body>
+</html>
