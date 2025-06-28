@@ -23,6 +23,14 @@ form {
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form select {
+  margin: 0;
 }
 
 form input,
@@ -30,10 +38,10 @@ form select,
 form button {
   width: 100%;
   padding: 12px;
-  margin-top: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
 form button {
@@ -101,4 +109,36 @@ footer {
   .contador button {
     align-self: flex-end;
   }
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.botoes button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.botoes .remover {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.botoes .remover:hover {
+  background-color: #b71c1c;
+}
+
+.botoes button:not(.remover) {
+  background-color: #00796b;
+  color: white;
+}
+
+.botoes button:hover:not(.remover) {
+  background-color: #004d40;
 }

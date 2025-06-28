@@ -12,6 +12,20 @@
   <body>
     <div class="container">
       <h1>📅 Contador de Dias</h1>
+      <div
+        style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px"
+      >
+        <input
+          id="busca"
+          placeholder="🔍 Buscar contador..."
+          style="flex: 1; padding: 10px"
+        />
+        <select id="ordenar" style="padding: 10px">
+          <option value="mais_recente">Mais recente</option>
+          <option value="mais_antigo">Mais antigo</option>
+        </select>
+      </div>
+
       <form id="form">
         <input
           type="text"

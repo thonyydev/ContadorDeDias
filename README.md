@@ -13,14 +13,6 @@ Um contador de dias simples e responsivo feito com HTML, CSS e JavaScript. Você
 - 💾 Dados salvos localmente (LocalStorage)
 - 🧼 Remoção de contadores com um clique
 
----
-
-## 📸 Preview
-
-![screenshot](https://user-images.githubusercontent.com/seu-usuario/seu-repo/imagem-preview.png)
-
----
-
 ## 🛠️ Como usar
 
 ### 📡 Hospedagem local
